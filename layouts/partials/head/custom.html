@@ -1,1 +1,4 @@
 <!-- You can add custom elements to the page header here. -->
+{{ if not .Site.IsServer }}
+  {{ partial "google/analytics" . }}
+{{ end }}
